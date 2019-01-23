@@ -23,5 +23,4 @@ Cleanup
 >>$ make clean
 
 *Execution*
->>$ ./cuda d_power N_power , where
-d = 2^d_power, N = 2^N_power
+>>$ ./cuda
