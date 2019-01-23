@@ -12,15 +12,29 @@ Parallel and Distributed Systems of Aristotle University of Thessaloniki(AUTH)**
 *Project 3*
 
 This repository includes a serial CPU implementation and a parallel GPU implementation.
-./SERIAL_CUDA   and
-./PARALLEL_CUDA
 
 *Compilation*
-Makefile included in each folder
->>$ make
+Makefile 
+The following command creates the parallel program
+>>$ make    
+or
+>>$ make parallel
+
+The following command creates the serial program
+>>$make serial
 
 Cleanup
 >>$ make clean
 
 *Execution*
 >>$ ./cuda
+
+*** Important ***
+1)Choose the power of the size of the Array N_power.
+2)Open matlabScript.m and change N_power value.(If you wish change the name of the files and the output folder)
+3)Run matlabScript
+4)Open *.cu file and change the value of N_power and set the desired value of d_power(If you have changed
+matlabScript's output files, make sure to change them in the folder too. You have to change 4 path strings
+(2 in main function, 2 in validationFromFile function)
+5)Compile the file you wish to run
+6)Run the file
