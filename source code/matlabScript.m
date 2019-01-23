@@ -1,7 +1,7 @@
 %Matlab Script Q,C Sets Generation
 %NN calculation
-
-N = 2^21
+N_power = 21;
+N = 2^N_power
 C = rand(N,3);
 Q = rand(N,3);
 %Specify Indeces and shortest Distances
