@@ -115,14 +115,14 @@ int main(int argc, char  *argv[])
   struct Element *devQ, *devC;
   float *devNNdistances;
   int *devNNindeces, *devIndexArrayC, *devIndexArrayQ;
-	int *devBitSearchArray;
+	//int *devBitSearchArray;
 	checkCuda( cudaMalloc( &devQ, N * sizeof(struct Element)));
   checkCuda( cudaMalloc( &devC, N * sizeof(struct Element)));
   checkCuda( cudaMalloc( &devNNdistances, N * sizeof(float)));
   checkCuda( cudaMalloc( &devNNindeces, N * sizeof(int)));
   checkCuda( cudaMalloc( &devIndexArrayQ, N* sizeof(int))); ;
   checkCuda( cudaMalloc( &devIndexArrayC, N * sizeof(int)));
-	checkCuda( cudaMalloc( &devBitSearchArray, (N*27/32)*sizeof(int)));
+	//checkCuda( cudaMalloc( &devBitSearchArray, (N*27/32)*sizeof(int)));
   printf("Space Allocated in GPU\n");
   /* Copy Arrays from HOST to DEVICE */
   checkCuda( cudaMemcpy( devQ, hostQ, N * sizeof( struct Element), cudaMemcpyHostToDevice));
@@ -131,7 +131,7 @@ int main(int argc, char  *argv[])
   checkCuda( cudaMemcpy( devIndexArrayC, indexArrayC, N * sizeof( int), cudaMemcpyHostToDevice));
   checkCuda( cudaMemcpy( devNNdistances, NNdistances, N * sizeof( float), cudaMemcpyHostToDevice));
   checkCuda( cudaMemset( devNNindeces, 0, N*sizeof( int))); //Set All Elements to 0
-	checkCuda( cudaMemset( devBitSearchArray, 0, (N*27/32)*sizeof( int))); //Set All Elements to 0
+	//checkCuda( cudaMemset( devBitSearchArray, 0, (N*27/32)*sizeof( int))); //Set All Elements to 0
 
   /* Initialize Dimensions */
 	int dimX, dimY, dimZ;
