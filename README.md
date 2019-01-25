@@ -2,6 +2,7 @@
 
 Nearest Neighbor Grid Implementation in CUDA
 
+
 Author: Dimitris Antoniadis ~ akdimitri@auth.gr
 
 ************************************************************************************
@@ -12,8 +13,7 @@ Parallel and Distributed Systems of Aristotle University of Thessaloniki(AUTH)**
 *Project 3*
 
 This repository includes a serial CPU implementation and a parallel GPU implementation.
---- Author: Dimitrios Antoniadis ----
---- email: akdmitri@auth.gr      ----
+
 *Compilation*
 Makefile 
 The following command creates the parallel program
