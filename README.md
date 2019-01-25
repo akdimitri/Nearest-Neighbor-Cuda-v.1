@@ -37,7 +37,7 @@ Cleanup
 
 >>$ ./cudaParallelShared argument1
 
-where d = 2^argument1 and grid size is d*d*d
+where d = 2^argument1 and grid size is [d X d X d]
 
 *** Important ***
 
