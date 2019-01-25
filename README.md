@@ -12,13 +12,17 @@ Parallel and Distributed Systems of Aristotle University of Thessaloniki(AUTH)**
 *Project 3*
 
 This repository includes a serial CPU implementation and a parallel GPU implementation.
-
+--- Author: Dimitrios Antoniadis ----
+--- email: akdmitri@auth.gr      ----
 *Compilation*
 Makefile 
 The following command creates the parallel program
 >>$ make    
 or
 >>$ make parallel
+
+The following command creates the parallel program using Shared Memory
+>>$ make shared 
 
 The following command creates the serial program
 >>$make serial
@@ -27,7 +31,13 @@ Cleanup
 >>$ make clean
 
 *Execution*
->>$ ./cuda
+>>$ ./cudaSerial argument1
+
+>>$ ./cudaParallel argument1
+
+>>$ ./cudaParallelShared argument1
+
+where d = 2^argument1 and grid size is d*d*d
 
 *** Important ***
 
